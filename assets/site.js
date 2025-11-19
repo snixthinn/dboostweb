@@ -96,13 +96,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const company = document.getElementById('company')?.value || '';
       const message = document.getElementById('message')?.value || '';
       const text = `Hello D-Boost!%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0ACompany: ${encodeURIComponent(company)}%0AMessage: ${encodeURIComponent(message)}`;
-      const waUrl = `https://wa.me/${WA_NUMBER}?text=${text}`;
+      const waUrl = `https://wa.me/${6285691570707}?text=${text}`;
       window.open(waUrl, '_blank');
     });
   }
 
   const waDirect = document.getElementById('wa-direct');
-  if(waDirect) waDirect.addEventListener('click', ()=> window.open(`https://wa.me/${WA_NUMBER}`, '_blank'));
+  if(waDirect) waDirect.addEventListener('click', ()=> window.open(`https://wa.me/${6285691570707}`, '_blank'));
 
   // accessibility focus outline when tabbing
   document.body.addEventListener('keydown', (e)=> { if(e.key === 'Tab') document.documentElement.classList.add('kbd-nav') });
